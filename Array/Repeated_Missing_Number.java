@@ -22,6 +22,8 @@ public class Repeated_Missing_Number {
 //        }
 //        return res;
 //    }
+    
+    //Faster than above function
 public static int[] findErrorNums(int[] nums) {
     int[] arr = new int[nums.length];
     int[] ans = new int[2];
