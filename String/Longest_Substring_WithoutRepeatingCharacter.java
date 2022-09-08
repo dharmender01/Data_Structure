@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class Longest_Substring_WithoutRepeatingCharacter {
     public static int longestSubstring(String str){
+       // String s = "";
         Map<Character,Integer> map = new HashMap<>();
         int ans = 0;
         int i = 0;
@@ -21,7 +22,12 @@ public class Longest_Substring_WithoutRepeatingCharacter {
                 if (map.get(ch) == 2) {
                     break;
                 } else {
+                    //String asf = str.substring(j,i);
                     int len = i - j;
+//                    if (len>ans){
+//                        ans = len;
+//                        s = asf;
+//                    }
                     ans = Math.max(ans, len);
                 }
             }
