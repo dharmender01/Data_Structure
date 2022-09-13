@@ -7,9 +7,8 @@ public class PrintAll_the_Duplicates {
     public static void printDuplicates(String str){
         Map<Character,Integer> map = new HashMap<>();
         for (int i = 0; i<str.length(); i++){
-            if(!map.containsKey(str.charAt(i))){
-                map.put(str.charAt(i),1);
-            }else map.put(str.charAt(i), map.get(str.charAt(i))+1);
+            char ch = str.charAt(i);
+           map.put(ch,map.getOrDefault(ch,0)+1);
         }
         for(char ch : map.keySet()){
             if (map.get(ch)>1){
