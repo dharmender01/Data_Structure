@@ -18,6 +18,6 @@ public class Valid_Parentheses {
         return stack.isEmpty();
     }
     public static void main(String[] args) {
-        System.out.println(valid_parentheses("{)[}{}"));
+        System.out.println(valid_parentheses("{}"));
     }
 }
